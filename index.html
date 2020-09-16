@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <script src="app.js" defer></script>
+    <title>MONSTER KILLER XXX</title>
+</head>
+<body>
+    <header>
+        <h1>MONSTER KILLER</h1>
+        <p><span>X</span><span>X</span><span>X</span></p>
+    </header>
+    <main>
+        
+        <!-- CHAMPION SELECTOR, CURRENTLY HIDDEN. LATER WILL FORCE PLAYER TO CHOOSE THE CHAMPION -->
+        <section class="champion-selector visibility-off">
+            <div class="champion-container">
+                <h2 class="pick-one">PICK YOUR CHAMPION</h2>
+                <div class="champions">
+                    <div class="select">
+                        <img src="" alt="Image of the Powerful Wizard." class="choose-wizard">
+                        <h3><span>wizard</span> of the order of rose</h3>
+                    </div>
+                    <div class="select">
+                        <img src="" alt="Image of the Mighty Knight." class="choose-wizard">
+                        <h3>the last <span>knight</span> of his majesty</h3>
+                    </div>
+                    <div class="select">
+                        <img src="" alt="Image of the Silent Figure... Is she even alive?" class="choose-wizard">
+                        <h3>the <span>priest</span> of the last god</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fight">
+            <div class="player-champion">
+                <div class="wizard visibility-off">
+                    <img src="./img/wizard.png" alt="Image of the Powerful Wizard." class="choose-wizard">
+                    <p><span>wizard</span> of the order of rose</p>
+                </div>
+                <div class="knight visibility-off">
+                    <img src="./img/knight.png" alt="Image of the Mighty Knight." class="choose-wizard">
+                    <p>the last <span>knight</span> of his majesty</p>
+                </div>
+                <div class="priest visibility-on">
+                    <img src="./img/priest.png" alt="Image of the Silent Figure... Is she even alive?" class="choose-wizard">
+                    <p>the <span>priest</span> of the last god</p>
+                </div>
+                <progress id="player-health" max="100" value="100">100%</progress>
+            </div>
+            <h2 class="vs">VS</h2>
+            <div class="current-monster">
+                <img src="./img/monster-1.png" alt="Image of a strange monster." class="monster">
+                <p>monster</p>
+                <progress id="monster-health" max="100" value="100">100%</progress>
+            </div>
+        </section>
+
+        <section class="game-body">
+            <div class="moves">
+                <button id="attack">
+                    <img src="./img/attack.png" alt="Basic Attack">
+                </button>
+                <button id="special-attack">
+                    <img src="./img/special-attack.png" alt="Special Attack">
+                </button>
+                <button id="heal">
+                    <img src="./img/heal.png" alt="Heal">
+                </button>
+            </div>
+            <div class="battle-log">
+                <p>BATTLE LOG</p>
+                <p class="battle-info">Information about game</p>
+            </div>
+        </section>
+
+        <!-- WIP -->
+        <section class="game-over visibility-off">
+
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
