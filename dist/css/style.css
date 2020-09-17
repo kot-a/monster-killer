@@ -87,16 +87,26 @@ header p {
   background-color: mediumvioletred;
 }
 
-.game-body .battle-log {
+.game-body .battle-log-info {
   padding: 10px;
   width: 100%;
 }
 
-.game-body .battle-log p {
+.game-body .battle-log-info h2 {
   text-align: center;
+  font-size: 2rem;
 }
 
-.game-body .battle-log .battle-info {
+.game-body .battle-log-info #battle-log {
+  max-height: 200px;
+  overflow-y: scroll;
+  overflow-x: auto;
   text-align: left;
+  font-size: 0px;
+}
+
+.game-body .battle-log-info #battle-log p {
+  margin: 0.3rem;
+  font-size: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
