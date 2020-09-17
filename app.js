@@ -127,8 +127,6 @@ function healPlayer() {
 //----------------------------------------------------------------------------------
 //Working on Battle Log
 
-battleLog.scrollTop = battleLog.scrollHeight;
-
 function writeToLog(event, value) {
     let logEntry;
     if (event === LOG_PLAYER_ATTACK){
